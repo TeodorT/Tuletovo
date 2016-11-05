@@ -1,0 +1,12 @@
+.slika-div{
+	width: 50%; 
+	float: right;
+}
+.slika-div img{
+	height: 300px; 
+	width: 400px
+}
+.tekst-div{
+	width: 50%; 
+	float: left
+}
