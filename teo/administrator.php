@@ -29,13 +29,13 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?> 
 
-<?php var_dump($sadrzaj); ?>
+<?php //var_dump($sadrzaj); ?>
 
 <?php include('header.php') ?>
-	<div>
+	<div class="content">
 		<form action="update-content.php" method="post">
-			<label for="sadrzaj">Sadrzaj
-			<textarea name="sadrzaj" id="sadrzaj" cols="30" rows="10"><?php echo $sadrzaj[0]['sadrzaj']; ?></textarea></label>
+			<label for="">Sadrzaj</label>
+			<textarea class="edit-content" name="sadrzaj" id="sadrzaj" cols="30" rows="10"><?php echo $sadrzaj[0]['sadrzaj']; ?></textarea>
 			
 			<input type="submit" value="Ažuriraj sadržaj">
 		</form>
