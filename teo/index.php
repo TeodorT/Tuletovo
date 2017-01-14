@@ -1,4 +1,4 @@
- <?php
+ <?php //ovaj deo je isti kao u administrator.php
 	$servername = "localhost";
 	$username = "root";
 	$password = "toor";
@@ -26,13 +26,13 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
-$conn->close();
-?> 
+$conn->close(); //do ovde
+?>
 
 <?php include('header.php'); ?>
 
 <div class="content">
-	
+	<!-- implementacija slajdera sa interneta, html deo  http://www.w3schools.com/w3css/w3css_slideshow.asp-->
 	<div class="w3-content w3-display-container" style="max-width:100%">
 		<img class="mySlides" src="http://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%">
 		<img class="mySlides" src="http://www.w3schools.com/w3css/img_fjords_wide.jpg" style="width:100%">
@@ -51,7 +51,7 @@ $conn->close();
 	
 </div>
 
-<script>
+<script>//sve u ovom tagu mozes sve da obrises, zaboravio sam to uraditi, sve ovo imas kopirano u main.js fajlu
 	var slideIndex = 1;
 	showDivs(slideIndex);
 	function plusDivs(n) {
